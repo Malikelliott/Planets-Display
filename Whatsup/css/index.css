@@ -1,0 +1,27 @@
+body {
+    background-image: url("../images/milky.webp");
+    background-blend-mode: lighten;
+    font-family:arial;
+    font-weight:bold;
+    text-align:center;
+}
+        
+.gridContainer { 
+    margin:20px; 
+    padding:20px;
+    display: grid; 
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header"
+        "content content content"
+        "footer footer footer";
+}
+
+.header {grid-area: header; 
+    background: lightblue;}
+    
+.content {grid-area: content; 
+    background: grey; }
+    
+.footer {grid-area: footer; 
+    background: lightblue }
